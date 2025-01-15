@@ -1,12 +1,14 @@
 'use client';
 
 import { AlertTriangle } from 'lucide-react';
+import { useRouter } from 'next/router';
 
-interface ErrorScreenProps {
-  onReset: () => void;
-}
-
-export default function ErrorScreen({ onReset }: ErrorScreenProps) {
+export default function ErrorScreen() {
+  const router = useRouter();
+  const handleReset = () => {
+    // スタート画面に戻る
+    router.push('/');
+  }
   return (
     <div className="flex flex-col items-center justify-center space-y-8 p-8">
       <div className="text-destructive">
@@ -20,7 +22,7 @@ export default function ErrorScreen({ onReset }: ErrorScreenProps) {
       </p>
       
       <button
-        onClick={onReset}
+        onClick={handleReset}
         className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold 
                  hover:opacity-90 transition-opacity shadow-lg hover:shadow-xl"
       >

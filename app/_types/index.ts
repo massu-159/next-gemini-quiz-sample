@@ -2,8 +2,8 @@
 export interface Question {
   id: number;
   question: string;
-  choices: string[];
-  correctAnswer: number;
+  options: string[];
+  answer: number;
 }
 
 export type QuizState = 'start' | 'quiz' | 'result';
