@@ -1,4 +1,8 @@
 # next-gemini-quiz-sample
+
+<img width="693" alt="スクリーンショット 2025-01-16 8 02 53" src="https://github.com/user-attachments/assets/aae5bf7c-2309-41df-9890-04a9ff085267" />
+
+<hr />
 bolt.newに以下のプロンプトを送信して、世界各国の国名の由来について出題するクイズアプリを作成。
 
 正解だと思う選択肢を3択から選ぶ。
